@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="Masterbots-icon" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masterbots Contact</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="contact.css" />
+    <div class="header">
+      <a href="index.html"
+        ><img src="logo.svg" class="logo" alt="Masterbots"
+      /></a>
+      <p class="MBtext">Masterbots</p>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <div class="Theader">
+        <a class="aheader" href="index.html">Home</a>
+        <a class="aheader active" href="contact.html">Contact</a>
+        <a class="aheader" href="about.html">About</a>
+      </div>
+    </div>
+
+    <p class="text">Contact</p>
+
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".Theader");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
+    <div class="contact-form">
+      <form action="https://formspree.io/f/xdaonepg" method="POST">
+        <label for="fname">Prenume:</label>
+        <input type="text" id="fname" name="fname" required />
+        <br />
+        <label for="lname">Nume:</label>
+        <input type="text" id="lname" name="lname" required />
+        <br />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="_replyto" required />
+        <br />
+        <label for="message">Mesaj:</label>
+        <textarea
+          id="message"
+          name="message"
+          maxlength="5000"
+          minlength="10"
+          required
+        ></textarea>
+        <br />
+        <button type="submit">Send</button>
+      </form>
+    </div>
+
+    <footer>
+      <div class="sfooter">
+        <p>© 2024 Masterbots. All rights reserved.</p>
+        <button id="Instagram" aria-label="Instagram Button">
+          <a
+            href="https://www.instagram.com/masterbots.team/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="instagram.svg" alt="Instagram Logo"
+          /></a>
+        </button>
+        <button id="Facebook" aria-label="Facebook Button">
+          <a
+            href="https://www.facebook.com/masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="facebook.svg" alt="Facebook Logo"
+          /></a>
+        </button>
+        <button id="TikTok" aria-label="TikTok Button">
+          <a
+            href="https://www.tiktok.com/@masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="tiktok.svg" alt="TikTok Logo"
+          /></a>
+        </button>
+      </div>
+    </footer>
+  </body>
+</html>

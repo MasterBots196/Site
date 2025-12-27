@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="Masterbots-icon" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Masterbots About</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="about.css" />
+    <div class="header">
+      <a href="index.html"
+        ><img src="logo.svg" class="logo" alt="Masterbots"
+      /></a>
+
+      <p class="MBtext">Masterbots</p>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <div class="Theader">
+        <a class="aheader" href="index.html">Home</a>
+        <a class="aheader" href="contact.html">Contact</a>
+        <a class="aheader active" href="about.html">About</a>
+      </div>
+    </div>
+    <h1 class="text">About Us</h1>
+    <p>
+      Bun venit la echipa de robotică Masterbots! Suntem un grup de elevi de
+      liceu dedicați inovației, muncii în echipă și excelenței în inginerie.
+      Concursând în FIRST Tech Challenge (FTC), proiectăm, construim și
+      programăm roboți avansați pentru a aborda provocări din lumea reală, de la
+      navigarea pe trasee cu obstacole până la executarea sarcinilor precise.
+      Echipa noastră pune accent pe educația STEM, colaborare și implicarea
+      comunității, inspirând următoarea generație de ingineri și rezolvatori de
+      probleme. Alătură-te nouă în timp ce ne pregătim pentru competiții
+      captivante și împingem limitele roboticii!
+    </p>
+    <footer>
+      <div class="sfooter">
+        <p>© 2024 Masterbots. All rights reserved.</p>
+        <button id="Instagram" aria-label="Instagram Button">
+          <a
+            href="https://www.instagram.com/masterbots.team/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="instagram.svg" alt="Instagram Logo"
+          /></a>
+        </button>
+        <button id="Facebook" aria-label="Facebook Button">
+          <a
+            href="https://www.facebook.com/masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="facebook.svg" alt="Facebook Logo"
+          /></a>
+        </button>
+        <button id="TikTok" aria-label="TikTok Button">
+          <a
+            href="https://www.tiktok.com/@masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="tiktok.svg" alt="TikTok Logo"
+          /></a>
+        </button>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".Theader");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

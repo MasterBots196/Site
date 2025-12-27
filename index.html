@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="Masterbots-icon" href="logo.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Merry Christmas</title>
+  </head>
+  <body>
+    <link rel="stylesheet" href="index.css" />
+    <div class="header">
+      <a href="index.html"
+        ><img src="logo.svg" class="logo" alt="Christmas Logo"
+      /></a>
+      <p class="MBtext">Masterbots</p>
+      <button class="hamburger" aria-label="Toggle menu">☰</button>
+      <div class="Theader">
+        <a class="active aheader" href="index.html">Home</a>
+        <a class="aheader" href="contact.html">Contact</a>
+        <a class="aheader" href="about.html">About</a>
+      </div>
+    </div>
+    <main>
+      <h1 class="text">Merry Christmas!</h1>
+      <p>
+        Wishing you a joyful holiday season filled with warmth, love, and
+        festive cheer. May your days be merry and bright!
+      </p>
+      <p>Enjoy the magic of Christmas with family and friends.</p>
+    </main>
+    <footer>
+      <div class="sfooter">
+        <p>© 2024 Masterbots. All rights reserved.</p>
+        <button id="Instagram" aria-label="Instagram Button">
+          <a
+            href="https://www.instagram.com/masterbots.team/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="instagram.svg" alt="Instagram Logo"
+          /></a>
+        </button>
+        <button id="Facebook" aria-label="Facebook Button">
+          <a
+            href="https://www.facebook.com/masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="facebook.svg" alt="Facebook Logo"
+          /></a>
+        </button>
+        <button id="TikTok" aria-label="TikTok Button">
+          <a
+            href="https://www.tiktok.com/@masterbots.team"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img src="tiktok.svg" alt="TikTok Logo"
+          /></a>
+        </button>
+      </div>
+    </footer>
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const nav = document.querySelector(".Theader");
+      hamburger.addEventListener("click", () => {
+        nav.classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>

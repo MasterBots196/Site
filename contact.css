@@ -1,0 +1,334 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* !Code start!*/
+body {
+  background-image: url("logo.svg");
+  background-color: #7d7d7d;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  font-family: "Roboto", sans-serif;
+}
+.text {
+  color: black;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 20px auto;
+  background-color: #2b5288;
+  width: fit-content;
+  padding: 10px;
+}
+.MBtext {
+  color: white;
+  font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+.Theader {
+  color: black;
+  text-align: center;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+/* Style the header with a grey background and some padding */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2b5288;
+  padding: 0 10px;
+}
+
+/* Hamburger menu button */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: white;
+  padding: 10px;
+}
+
+/* Style the header links */
+.header a {
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 25px;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+/* Style the logo link */
+.header img.logo {
+  width: 100px;
+  height: auto;
+  padding: 8px 10px;
+}
+.header img.logo:hover {
+  background-color: #2b5288;
+}
+/* Change the background color on mouse-over */
+.header a.aheader:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active/current link*/
+.header a.active {
+  background-color: #7d7d7d;
+  color: white;
+}
+
+/* Float the link section to the right */
+.Theader {
+  display: flex;
+  align-items: center;
+}
+p {
+  background: #2b5288;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  padding: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+  margin: 20px auto;
+  width: fit-content;
+}
+.contact-form {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 100px;
+  background-color: #2b5288;
+  width: 70%;
+  margin: auto;
+  color: white;
+}
+.contact-form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 0px solid #ccc;
+  border-radius: 4px;
+  background-color: #fffee0;
+  align-content: center;
+}
+.contact-form textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: #fffee0;
+}
+.contact-form button {
+  background-color: #4d8feb;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  margin: 10px 0px;
+}
+
+/* Style the footer */
+footer {
+  background-color: #2b5288;
+
+  text-align: center;
+
+  border-radius: 10px 10px 0 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.sfooter button {
+  background-color: transparent;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  margin: 10px 0px;
+}
+.sfooter button img {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+}
+/* Style the footer */
+/* Add media queries for responsiveness - when the screen is 500px wide or less, stack the links on top of each other */
+@media screen and (max-width: 500px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .hamburger {
+    display: block;
+    align-self: flex-end;
+  }
+  .Theader {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background-color: cornflowerblue;
+  }
+  .Theader.open {
+    display: flex;
+  }
+  .header a {
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+  main {
+    margin: 20px auto;
+    padding: 10px;
+  }
+  main h1 {
+    font-size: 2em;
+  }
+  main p {
+    font-size: 1em;
+  }
+}
