@@ -15,7 +15,7 @@
   </head>
   <body>
     <link rel="stylesheet" href="index.css" />
-    <div class="header">
+    <div class="header visible">
       <a href="index.html"
         ><img src="logo.svg" class="logo" alt="Christmas Logo"
       /></a>
@@ -34,7 +34,6 @@
       <h1 class="text-masterbots">Masterbots</h1>
       <div class="div-parent">
         <div class="text-index">
-<<<<<<< HEAD
           <p class="text-p">
             Masterbots este o comunitate inovatoare dedicată roboticii și
             tehnologiei avansate. Suntem pasionați să dezvoltăm soluții robotice
@@ -46,12 +45,6 @@
         </div>
         <div class="text-index">
           <p class="text-p">Masterbots merry christmas!</p>
-=======
-          <p class="text-p">__________________</p>
-        </div>
-        <div class="text-index">
-          <p class="text-p">_________</p>
->>>>>>> 01f95e576cc501e54c83bde4739f1daf76ed2ae6
         </div>
       </div>
     </main>
@@ -88,8 +81,32 @@
     <script>
       const hamburger = document.querySelector(".hamburger");
       const nav = document.querySelector(".Theader");
+      const header = document.querySelector(".header");
+      let lastScrollTop = 0;
+
       hamburger.addEventListener("click", () => {
         nav.classList.toggle("open");
+      });
+
+      window.addEventListener("scroll", () => {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 0) {
+          // At the top of the page
+          header.classList.remove("hidden");
+          header.classList.add("visible");
+        } else if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          header.classList.remove("visible");
+          header.classList.add("hidden");
+        } else {
+          // Scrolling up
+          header.classList.remove("hidden");
+          header.classList.add("visible");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     </script>
   </body>

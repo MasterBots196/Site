@@ -125,19 +125,20 @@ table {
 
 /* !Code start!*/
 
+html,
 body {
+  box-sizing: border-box;
+}
 
-
-     background-image:url("logo.svg") ,url("background.png") ;
-
-  
+body {
+  background-image: url("logo.svg"), url("background.png");
 
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   font-family: "Roboto", sans-serif;
-
+  overflow-x: hidden;
 }
 .MBtext {
   color: white;
@@ -145,7 +146,7 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
-  align: center;
+  flex: 1;
   margin: auto;
 }
 .text-masterbots {
@@ -161,7 +162,7 @@ body {
 }
 main {
   max-width: 1000px;
-  margin: 50px auto;
+  margin: 100px auto 50px auto;
   padding: 20px;
   text-align: center;
   font-family: "Roboto", sans-serif;
@@ -211,6 +212,7 @@ main p {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  max-width: 1;
 }
 /* Style the header with a grey background and some padding */
 .header {
@@ -220,6 +222,19 @@ main p {
   background-color: #2b5288;
   width: 100%;
   padding: 0 10px;
+  box-sizing: border-box;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  transition: transform 0.5s ease-in-out;
+}
+
+.header.hidden {
+  transform: translateY(-100%);
+}
+
+.header.visible {
+  transform: translateY(0);
 }
 
 /* Hamburger menu button */
@@ -271,6 +286,7 @@ main p {
 .Theader {
   display: flex;
   align-items: center;
+  margin-left: auto;
 }
 
 /* Style the footer */

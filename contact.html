@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html>
   <head>
     <link rel="shortcut icon" type="Masterbots-icon" href="logo.svg" />
@@ -14,7 +14,7 @@
   </head>
   <body>
     <link rel="stylesheet" href="contact.css" />
-    <div class="header">
+    <div class="header visible">
       <a href="index.html"
         ><img src="logo.svg" class="logo" alt="Masterbots"
       /></a>
@@ -32,8 +32,32 @@
     <script>
       const hamburger = document.querySelector(".hamburger");
       const nav = document.querySelector(".Theader");
+      const header = document.querySelector(".header");
+      let lastScrollTop = 0;
+
       hamburger.addEventListener("click", () => {
         nav.classList.toggle("open");
+      });
+
+      window.addEventListener("scroll", () => {
+        let currentScroll =
+          window.pageYOffset || document.documentElement.scrollTop;
+
+        if (currentScroll <= 0) {
+          // At the top of the page
+          header.classList.remove("hidden");
+          header.classList.add("visible");
+        } else if (currentScroll > lastScrollTop) {
+          // Scrolling down
+          header.classList.remove("visible");
+          header.classList.add("hidden");
+        } else {
+          // Scrolling up
+          header.classList.remove("hidden");
+          header.classList.add("visible");
+        }
+
+        lastScrollTop = currentScroll <= 0 ? 0 : currentScroll;
       });
     </script>
     <div class="contact-form">
@@ -92,4 +116,3 @@
     </footer>
   </body>
 </html>
-
