@@ -126,13 +126,18 @@ table {
 /* !Code start!*/
 
 body {
-  background-image: url("logo.svg");
-  background-color: #7d7d7d;
+
+
+     background-image:url("logo.svg") ,url("background.png") ;
+
+  
+
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
   font-family: "Roboto", sans-serif;
+
 }
 .MBtext {
   color: white;
