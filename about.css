@@ -355,7 +355,7 @@ footer {
   .header {
     flex-direction: column;
     align-items: flex-start;
-    padding: 0;
+
   }
   .header img.logo {
     width: 60px;
@@ -395,4 +395,5 @@ footer {
     font-size: 1em;
   }
 }
+
 
