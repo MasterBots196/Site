@@ -140,6 +140,8 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: bold;
   text-align: center;
+  align: center;
+  margin: auto;
 }
 .text-masterbots {
   color: black;
@@ -211,7 +213,7 @@ main p {
   justify-content: space-between;
   align-items: center;
   background-color: #2b5288;
-
+  width: 100%;
   padding: 0 10px;
 }
 
